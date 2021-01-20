@@ -1,5 +1,5 @@
 import React from 'react';
-import Photocard from './PhotoCard';
+import PhotoCard from './PhotoCard';
 
 const data = [
     {
@@ -31,7 +31,7 @@ function PhotoGallery() {
             <h2>The Gallery</h2>
             <div className="gallery">
                 {
-                    data.map(i => <Photocard 
+                    data.map(i => <PhotoCard 
                                     title={i.title}
                                     description={i.description}
                                     url={i.url}
