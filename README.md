@@ -1,4 +1,4 @@
-# Teact Ajax Dad jokes
+# react Ajax Dad jokes
 
 - shows header
 - shows a "holder" for jokes
