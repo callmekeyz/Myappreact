@@ -1,6 +1,15 @@
 import React from 'react';
 import PhotoCard from './PhotoCard';
 
+/*
+    The <></> JSX are short hand for:
+    <React.Fragment></React.Fragment>
+    This exists so you don't litter your DOM
+    with a bunch of divs.
+*/
+
+
+
 const data = [
     {
         title: "rainbow",
@@ -26,15 +35,17 @@ const data = [
 ]
 
 function PhotoGallery() {
+    // A React.Fragment is like an Array of Components
+    // Also written as <></>
     return (
         <>
             <h2>The Gallery</h2>
             <div className="gallery">
                 {
-                    data.map(i => <PhotoCard 
+                   data.map(i => <PhotoCard 
                                     title={i.title}
-                                    description={i.description}
                                     url={i.url}
+                                    description={i.description}
                                 />)
                 }
             </div>
